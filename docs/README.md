@@ -29,4 +29,6 @@ Do đó, cần có cách thay đổi, cập nhật giao diện tối ưu hơn =>
 # Virtual DOM
 
 - VirtualDOM là cách React (hay Vue) sử dụng để cập nhật giao diện.
+- VirtualDOM là cách tạo ra một mô hình DOM ảo, khi có update tới các phần tử trong VirtualDOM, nó sẽ thực hiện so sánh bằng thuật toán `diff` để tìm ra sự thay đổi và chỉ cập nhật các phần tử đó thay vì việc phải rerender cả page.
 
+> Changing Virtual DOM should not be much different than changing the real DOM. The problem is in the aftermath: changes in real DOM trigger relayout and repaint, so the less we touch the real thing, the better.
